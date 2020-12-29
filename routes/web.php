@@ -22,3 +22,15 @@ Route::get('/tentang', function () {
 Route::get('/list', function () {
     return view('list');
 });
+
+Route::get('/blog', function () {
+    return view('blog');
+});
+
+Route::get('/gabung', function () {
+    return view('gabung');
+});
+
+Route::get('/kontak', function () {
+    return view('kontak');
+});

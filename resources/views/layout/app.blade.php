@@ -43,9 +43,9 @@
                     <li><a class="hover-yellow" href="{{ asset('/') }}">Home</a></li>
                     <li><a class="hover-yellow" href="{{ asset('/tentang') }}">Tentang Kami</a></li>
                     <li><a class="hover-yellow" href="{{ asset('/list') }}">Mitra UMKM</a></li>
-                    <li><a class="hover-yellow" href="services.html">Blog</a></li>
-                    <li><a  class="hover-yellow" href="portfolio.html">Gabung</a></li>
-                    <li><a  class="hover-yellow" href="contact-us.html">Kontak</a></li>
+                    <li><a class="hover-yellow" href="{{ asset('/blog') }}">Blog</a></li>
+                    <li><a  class="hover-yellow" href="{{ asset('/gabung') }}">Gabung</a></li>
+                    <li><a  class="hover-yellow" href="{{ asset('/kontak') }}">Kontak</a></li>
                 </ul>
             </div>
         </div>

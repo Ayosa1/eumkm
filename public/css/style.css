@@ -2428,3 +2428,12 @@ img.author-box-image {
 .tentang-title {
     letter-spacing: 6px;
 }
+
+.input_select{
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #202020;
+    border: none;
+}
