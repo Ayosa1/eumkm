@@ -12,7 +12,7 @@
                             <div class="center gap fade-down section-heading">
                                 <h2 class="main-title">Kontak</h2>
                                 <hr>
-                                <p>Memberikan Layanan Promosi Penjualan secara luas</p>
+                                <p>Mitra Layanan Promosi Semakin Luas</p>
                             </div>
                         </div>
                     </div>

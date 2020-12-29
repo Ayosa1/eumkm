@@ -2393,7 +2393,6 @@ img.author-box-image {
     position: relative;
 	z-index: 1;
     top: 0px;
-    filter: brightness(0.5);
 }
 
 .tulisan-carousel{
@@ -2436,4 +2435,19 @@ img.author-box-image {
     background-color: rgba(0, 0, 0, 0.1);
     color: #202020;
     border: none;
+}
+
+.background-text{
+    background-color:  rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+.content-mengapa{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.content-tengah{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }

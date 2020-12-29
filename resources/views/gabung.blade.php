@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-<script src="js/gabung.js"></script>
+<script src="js/tentang.js"></script>
 <section id="single-page-slider" class="no-margin">
     <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -12,7 +12,7 @@
                             <div class="center gap fade-down section-heading">
                                 <h2 class="main-title">Gabung</h2>
                                 <hr>
-                                <p>Memberikan Layanan Promosi Penjualan secara luas</p>
+                                <p>Mitra Layanan Promosi Semakin Luas</p>
                             </div>
                         </div>
                     </div>
@@ -29,23 +29,35 @@
             <div class="row">
                 <div class="center gap fade-down section-heading">
                     <h2 class="tentang-title">Syarat-syarat Gabung</h2>
-                    <hr>
-                    <p>Berikut ini adalah Syarat-syarat yang harus di penuhi jika ingin gabung</p>
-                </div>
+                </div><br>
             </div>
             <div class="row">
-                <div class="container gap fade-down section-heading">
+               <div class="col-sm-3 fade-down">
+                <img src="/images/product/a.jpg" width="200px" height="150px" alt="">
+                <p style="margin-top: 50px" class="content-tengah">Mempunyai alamat usaha</p>
+               </div>
+               <div class="col-sm-3 fade-down">
+                <img src="/images/product/b.png" width="200px" height="150px" alt="">
+                <p style="margin-top: 50px" class="content-tengah">Memberikan data usaha berupa
                     <ul>
-                        <li>......................................</li>
-                        <li>......................................</li>
-                        <li>......................................</li>
-                        <li>......................................</li>
-                        <li>......................................</li>
-                        <li>......................................</li>
-                        <li>......................................</li>
-                        <li>......................................</li>
-                    </ul>
-                </div>
+                        <li>foto produk minimal 3</li>
+                        <li>foto KTP</li>
+                        <li>alamat email</li>
+                    </ul></p>
+               </div>
+               <div class="col-sm-3 fade-down">
+                <img src="/images/product/c.png" width="200px" height="150px" alt="">
+                <p style="margin-top: 50px" class="content-tengah">Mempunyai acount mendia sosial khusus penjualan produk berupa
+                    <ul>
+                        <li>Nomor whatsapp</li>
+                        <li>Akun Instagram</li>
+                        <li>Akun Facebook</li>    
+                    </ul></p>
+               </div>
+               <div class="col-sm-3 fade-down">
+                <img src="/images/product/d.jpg" width="200px" height="150px" alt="">
+                <p style="margin-top: 50px" class="content-tengah" >Memiliki Usaha Mikro Tetap</p>
+               </div>
             </div>
             <div class="gap"></div>
             <div class="gap"></div>

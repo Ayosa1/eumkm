@@ -2,7 +2,7 @@
 
 @section('content')
 
-<script src="js/list.js"></script>
+<script src="js/tentang.js"></script>
 <section id="single-page-slider" class="no-margin">
     <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -13,7 +13,7 @@
                             <div class="center gap fade-down section-heading">
                                 <h2 class="main-title">Daftar UMKM</h2>
                                 <hr>
-                                <p>Memberikan Layanan Promosi Penjualan secara luas</p>
+                                <p>Mitra Layanan Promosi Semakin Luas</p>
                             </div>
                         </div>
                     </div>

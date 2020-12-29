@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-<script src="js/blog.js"></script>
+<script src="js/tentang.js"></script>
 <section id="single-page-slider" class="no-margin">
     <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -10,9 +10,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="center gap fade-down section-heading">
-                                <h2 class="main-title">Hot Off The Press</h2>
+                                <h2 class="main-title">Blog eumkm</h2>
                                 <hr>
-                                <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+                                <p>Mitra Layanan Promosi Semakin Luas</p>
                             </div>
                         </div>
                     </div>
