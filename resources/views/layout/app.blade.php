@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="author" content="">
     <title>E-UMKM</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ url('/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url('/css/font-awesome.min.css') }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eb15521389.js" crossorigin="anonymous"></script>   
-    <link href="css/pe-icons.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/jquery.js"></script>
+    <link href="{{ url('/css/pe-icons.css') }}" rel="stylesheet">
+    <link href="{{ url('/css/prettyPhoto.css') }}" rel="stylesheet">
+    <link href="{{ url('/css/animate.css') }}" rel="stylesheet">
+    <link href="{{ url('/css/style.css') }}" rel="stylesheet">
+    <script src="{{ url('js/jquery.js') }}"></script>
    
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -42,10 +43,38 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="hover-yellow" href="{{ asset('/') }}">Home</a></li>
                     <li><a class="hover-yellow" href="{{ asset('/tentang') }}">Tentang Kami</a></li>
-                    <li><a class="hover-yellow" href="{{ asset('/list') }}">Mitra UMKM</a></li>
-                    <li><a class="hover-yellow" href="{{ asset('/blog') }}">Blog</a></li>
+                     <li class="dropdown hover-yellow">
+                        <a href="#" style="color: black" class="dropdown-toggle hover-yellow" data-toggle="dropdown">Kategori Produk <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu hover-yellow">
+                            <li><a class="hover-yellow" href="{{ url('/kategorikuliner') }}">Kuliner</a></li>
+                            <li><a class="hover-yellow" href="{{ url('/kategorifashion') }}">Fasion</a></li>
+                            <li><a class="hover-yellow" href="{{ url('/kategoricinmata') }}">Cindera Mata</a></li>
+                            <li><a class="hover-yellow" href="{{ url('/kategorikosmetik') }}">Kosmetik</a></li>
+                            <li><a class="hover-yellow" href="{{ url('/kategoriagro') }}">Agro Bisnis</a></li>
+                            <li><a class="hover-yellow" href="{{ url('/kategoriseni') }}">Seni Kerajinan</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="hover-yellow" href="{{ asset('/blog') }}">Edukasi</a></li>
                     <li><a  class="hover-yellow" href="{{ asset('/gabung') }}">Gabung</a></li>
                     <li><a  class="hover-yellow" href="{{ asset('/kontak') }}">Kontak</a></li>
+                    @if (Auth::check())
+                    <li class="dropdown hover-yellow">
+                        <a href="#" style="color: black" class="dropdown-toggle hover-yellow" data-toggle="dropdown"><i class="fas fa-user"></i> <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu hover-yellow">
+                            <li><a class="hover-yellow disabled" >hello {{Auth::user()->name}}</a></li>
+                            @if (auth()->user()->level=="umkm" || auth()->user()->level=="admin")
+                            <li><a class="hover-yellow" href="{{ url('dataumkm') }}">Detail Anggota</a></li>
+                            @endif
+                            @if (auth()->user()->level=="admin" || auth()->user()->level=="smauii" || auth()->user()->level=="okeoc")   
+                            <li><a class="hover-yellow" href="{{ route('adminhome') }}">Dashboard UMKM</a></li>
+                            @endif
+                            <li><a class="hover-yellow" href="{{ url('detailacount') }}">Profile</a></li>
+                            <li><a class="hover-yellow" href="{{ route('logout') }}">Log Out</a></li>
+                        </ul>
+                    </li>
+                    @else
+                    <li><a  class="hover-yellow" href="{{ asset('/login') }}">Login</a></li>                 
+                    @endif
                 </ul>
             </div>
         </div>
@@ -53,7 +82,7 @@
 
     @yield('content')
     
-    <div id="footer-wrapper">
+    <div id="footer-wrapper" style="position: relative;">
         <section id="bottom" class="">
             <div class="container">
                 <div class="row flex-footer">
@@ -104,10 +133,10 @@
     </div>
 
 
-    <script src="js/plugins.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="{{ url('/js/plugins.js') }}"></script>
+    <script src="{{ url('/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url('/js/jquery.prettyPhoto.js') }}"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
-    <script src="js/init.js"></script>
+    <script src="{{ url('/js/init.js') }}"></script>
 </body>
 </html>

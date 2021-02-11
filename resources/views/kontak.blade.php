@@ -50,10 +50,10 @@
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="center team-member">
-                            <img class="img-responsive img-thumbnail bounce-in" src="http://placehold.it/400x400" alt="">
+                            <img class="img-responsive img-thumbnail bounce-in" style="width: 400px; height:400px;" src="{{url('storage/images/foto_logo/rifki.jpg')}}" alt="">
                             <div class="team-content fade-up">
-                                <h5>Dave Gorman<small class="role muted">Web Design</small></h5>
-                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
+                                <h5>Rifky Dermawan<small style="color: black;" class="role muted">Chief Executive Officer</small></h5>
+                                <p>Tindakan tepat berasal dari pengalaman, dan pengalaman berasal dari keputusan bodoh</p>
                                 <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>

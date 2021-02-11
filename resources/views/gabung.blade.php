@@ -33,11 +33,15 @@
             </div>
             <div class="row">
                <div class="col-sm-3 fade-down">
-                <img src="/images/product/a.jpg" width="200px" height="150px" alt="">
-                <p style="margin-top: 50px" class="content-tengah">Mempunyai alamat usaha</p>
+                <div class="center border-gambar" style="background-color: #f0ad4e; width:200px" >
+                    <img src="/images/product/a.png" width="200px" height="200px" alt="">
+                </div>
+                    <p style="margin-top: 50px" class="content-tengah">Mempunyai alamat usaha</p>
                </div>
                <div class="col-sm-3 fade-down">
-                <img src="/images/product/b.png" width="200px" height="150px" alt="">
+                <div class="center border-gambar" style="background-color: #f0ad4e; width:200px" >
+                    <img src="/images/product/b.png" width="200px" height="200px" alt="">
+                </div>
                 <p style="margin-top: 50px" class="content-tengah">Memberikan data usaha berupa
                     <ul>
                         <li>foto produk minimal 3</li>
@@ -46,7 +50,9 @@
                     </ul></p>
                </div>
                <div class="col-sm-3 fade-down">
-                <img src="/images/product/c.png" width="200px" height="150px" alt="">
+                <div class="center border-gambar" style="background-color: #f0ad4e; width:200px" >
+                    <img src="/images/product/c.png" width="200px" height="200px" alt="">
+                </div>
                 <p style="margin-top: 50px" class="content-tengah">Mempunyai acount mendia sosial khusus penjualan produk berupa
                     <ul>
                         <li>Nomor whatsapp</li>
@@ -55,7 +61,9 @@
                     </ul></p>
                </div>
                <div class="col-sm-3 fade-down">
-                <img src="/images/product/d.jpg" width="200px" height="150px" alt="">
+                <div class="center border-gambar" style="background-color: #f0ad4e; width:200px" >
+                    <img src="/images/product/d.png" width="200px" height="200px" alt="">
+                </div>
                 <p style="margin-top: 50px" class="content-tengah" >Memiliki Usaha Mikro Tetap</p>
                </div>
             </div>
@@ -64,52 +72,130 @@
             <div class="gap"></div>
         </div>
     </section>
-    <section id="about-us" class="white">
+    {{-- <section id="formgabung" class="white">
         <div class="container">
-            <div class="gap"></div>
-            <div class="row">
-                <div class="col-md-4 fade-up">
-                    <h3>Contact Information</h3>
-                    <p><span class="icon icon-home"></span>Kota Yogyakarta, Daerah Istimewa Yogyakarta<br/>
-                        <span class="icon icon-phone"></span>+36 65984 405<br/>
-                        <span class="icon icon-mobile"></span>+36 65984 405<br/>
-                        <span class="icon icon-envelop"></span> <a href="#">umkm@gmail.com</a> <br/>
-                        <span class="icon icon-twitter"></span> <a href="#">umkm@gmail.com</a> <br/>
-                    </p>
-                </div><!-- col -->
+            @if (Auth()->user()->level=="umkm"){
 
-                <div class="col-md-8 fade-up">
-                    <h3>Isi form berikut jika ingin bergabung</h3>
-                    <br>
-                    <br>
-                    <div id="message"></div>
-                    <form method="post" action="sendemail.php" id="contactform">
-                        <input type="text" name="name" id="website" placeholder="nama UMKM" />
-                        <input type="text" name="name" id="website" placeholder="nama Pemilik" />
-                        <input type="text" name="email" id="website" placeholder="Email UMKM" />
-                        <input type="text" name="website" id="website" placeholder="alamat" />
-                        <input type="text" name="website" id="website" placeholder="Nomor HP" />
-                        <select class="input_select" name="carlist" form="carform">
-                            <option value="volvo">Kuliner</option>
-                            <option value="saab">Otomotif</option>
-                            <option value="opel">Cindera mata</option>
-                            <option value="audi">Fasion</option>
-                          </select>
-                        <input type="text" name="website" id="website" placeholder="Produk UMKM" />
-                        <span style="font-size: 18px">Gambar UMKM</span><br>
-                        <input type="file" name="myImage" accept="image/x-png,image/gif,image/jpeg" /><br>
-                        <input class="btn btn-outlined btn-warning" type="submit" name="submit" value="Submit" />
-                    </form>
-                </div><!-- col -->
-            </div>
-
-            <div class="gap"></div>
-            <div class="row">
-                
-            </div>
-            <div class="gap"></div>
-            <div class="gap"></div>
+                <div class="padding-gabung">
+                    <div class="post border-radius">
+                        <div class="post-img-content">
+                            <div class="overlay">
+                                <a class="preview btn btn-outlined btn-warning" href="#"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3 style="color: gray">{{Auth::user()->name}} Klik link di bawah Jika Anda ingin bergabung</h3>
+                            <div class="read-more-wrapper">
+                                <a href="{{ route('form1') }}" class="btn btn-outlined btn-warning">Gabung</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+           
+            }@else{
+            <div class="padding-gabung">
+                <div class="post border-radius">
+                    <div class="post-img-content">
+                        <div class="overlay">
+                            <a class="preview btn btn-outlined btn-warning" href="#"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 style="color: gray">jika anda ingin bergabung silahkan anda Registrasi menjadi Mitra..</h3>
+                        <div class="read-more-wrapper">
+                            <a href="{{ route('register') }}" class="btn btn-outlined btn-warning">Registrasi</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        }@endif      
         </div>
+    </section> --}}
+    <section id="services" class="white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="tentang-title">Kategori UMKM</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="row">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in padding-card">
+                                <h3 class="media-heading">Usaha Kuliner</h3>
+                                <img class="border-radius" src="/images/product/6.jpg" width="300px" height="170px" alt="">
+                                <p class="content-mengapa" style="margin-top: 20px">Memberikan berbagai macam pilihan makanan, minuman dan jajanan tradisional yang ditawarkan dari mitra kuliner kita.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class="col-md-6 col-sm-6">
+                    <div class="row">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in padding-card">
+                                <h3 class="media-heading">Usaha Fasion</h3>
+                                <img class="border-radius" src="/images/product/7.jpg" width="300px" height="170px" alt="">
+                                <p class="content-mengapa" style="margin-top: 20px">Mulai dari beragam jenis pakaian dan model-model kekinian hingga classic ada dalam satu wadah usaha fashion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="row">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in padding-card">
+                                <h3 class="media-heading">Cindera mata</h3>
+                                <img class="border-radius" src="/images/product/8.jpg" width="300px" height="170px" alt="">
+                                <p class="content-mengapa" style="margin-top: 20px">Produk yang ditawarkan mulai dari produk kecantikan berbahan herbal yang aman untuk digunakan hingga salon kecantikan dan alat-alat kosmetik.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class="col-md-6 col-sm-6">
+                    <div class="row">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in padding-card">
+                                <h3 class="media-heading">Kosmetik</h3>
+                                <img class="border-radius" src="/images/product/9.jpg" width="300px" height="170px" alt="">
+                                <p class="content-mengapa" style="margin-top: 20px">Pernak Pernik/souvenir yang dapat anda bawa sebagai oleh-oleh ketika berkunjung atau berwisata ketempat tertentu untuk kenang-kenangan dari hasil kunjungan anda </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="row">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in padding-card">
+                                <h3 class="media-heading">Argo Bisnis</h3>
+                                <img class="border-radius" src="/images/product/3.jpg" width="300px" height="170px" alt="">
+                                <p class="content-mengapa" style="margin-top: 20px">Usaha tani yang berbasis usaha pertanian dengan menawarkan berbagai jenis tanaman, mulai dari tanaman hias, benih tanaman, buah-buahan hingga sayur mayur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class="col-md-6 col-sm-6">
+                    <div class="row">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in padding-card">
+                                <h3 class="media-heading">Seni Kerajinan</h3>
+                                <img class="border-radius" src="/images/product/10.jpg" width="300px" height="170px" alt="">
+                                <p class="content-mengapa" style="margin-top: 20px">Disini kami memiliki berbagai macam seni kerajinan yang mungkin anda inginkan
+                                    (seni kriya kayu, seni kriya tekstil, seni kriya keramik, dll)
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
     </section>
 </div>
 </div>    

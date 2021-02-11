@@ -1,7 +1,7 @@
     jQuery(document).ready(function($){
 	'use strict';
       	jQuery('body').backstretch([
-	        "images/logo/webpolos.jpg"
+	        "images/logo/weeb1.jpg"
 	    ], {duration: 5000, fade: 500, centeredY: true });
 
 		$("#mapwrapper").gMap({ controls: false,

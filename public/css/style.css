@@ -679,7 +679,7 @@ ul.tag-cloud li {
 
 .navbar-inverse .navbar-toggle {
     background-color: transparent;
-    color: #fff;
+    color: #333;
 }
 
 .navbar-fixed-top {
@@ -813,7 +813,7 @@ ul.tag-cloud li {
 }
 
 .navbar-inverse .navbar-nav .dropdown-menu {
-    background-color: #202020;
+    background-color: white;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -835,7 +835,7 @@ ul.tag-cloud li {
 .navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: white;
 }
 
 .navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
@@ -863,7 +863,7 @@ ul.tag-cloud li {
 }
 
 .navbar-inverse.opaqued .navbar-nav .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: white;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
@@ -1483,6 +1483,7 @@ img.author-box-image {
 
 #content-wrapper {
     padding: 0;
+    margin-bottom: 0 !important;
     z-index: 5;
     position: relative;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
@@ -2204,7 +2205,7 @@ img.author-box-image {
 
 .navbar-inverse .navbar-nav .dropdown-menu > li > a {
     padding: 15px 15px 15px;
-    color: #eee;
+    color: #0e0e0e;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 1px;
@@ -2415,6 +2416,10 @@ img.author-box-image {
     border-radius: 20px;
 }
 
+.border-gambar{
+    border-radius: 100px;
+}
+
 .padding-card{
     padding: 20px;
 }
@@ -2451,3 +2456,108 @@ img.author-box-image {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
+
+
+@media only screen and (min-width: 992px) {
+    .padding-gabung{
+        padding-left: 200px;
+        padding-right: 200px;
+        
+    }
+  }
+
+.span_acount{
+    color: gray;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.gabung_title{
+    color: gray;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.align_auth_image{
+    display: flex;
+    justify-content: center;
+}
+
+.align_auth_form{
+    max-width: 350px;
+}
+
+@media only screen and (max-width: 575px) {
+    .align_auth_image{
+        display: flex;
+        justify-content: center;
+    }
+
+    .align_auth_form{
+        max-width: none;
+    }
+  }
+
+  .ukuran_logo{
+    width: 400px;
+    height: 400px;
+}
+
+.margin_login{
+    margin-top: 8%;
+}
+
+.background-cover-kuliner{
+    background-image:url(/storage/images/foto_logo/makanan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+
+.background-cover-fashion{
+    background-image:url(/storage/images/foto_logo/fashion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+
+.background-cover-cindera{
+    background-image:url(/storage/images/foto_logo/cindera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+
+.background-cover-kosmetik{
+    background-image:url(/storage/images/foto_logo/kosmetik.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+
+.background-cover-agro{
+    background-image:url(/storage/images/foto_logo/agro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+
+.background-cover-seni{
+    background-image:url(/storage/images/foto_logo/seni.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+
+  @media only screen and (max-width: 991px) {
+    .ukuran_logo{
+        width: 300px;
+        height: 300px;
+    }
+
+    .margin_login{
+        margin-top: 3%;
+    }
+  }
+
