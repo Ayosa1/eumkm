@@ -15,11 +15,28 @@ class Userseeder extends Seeder
     {
         User::truncate();
         User::create([
-            'name' => 'Admin EUMKM',
+            'name' => 'AdminEUMKM',
             'email' => 'admineumkm@gmail.com',
             'level' => 'admin',
             'password' => bcrypt('admin123'),
             'remember_token' => Str::random(60),
+            'domisili' => 'Yogyakarta',
+        ]);
+        User::create([
+            'name' => 'Haryoadmin',
+            'email' => 'haryoadmin@gmail.com',
+            'level' => 'admin',
+            'password' => bcrypt('admin123'),
+            'remember_token' => Str::random(60),
+            'domisili' => 'Yogyakarta',
+        ]);
+        User::create([
+            'name' => 'rifkiadmin',
+            'email' => 'rifkiadmin@gmail.com',
+            'level' => 'admin',
+            'password' => bcrypt('admin123'),
+            'remember_token' => Str::random(60),
+            'domisili' => 'Yogyakarta',
         ]);
     }
 }

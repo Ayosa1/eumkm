@@ -30,9 +30,8 @@
                <div class="gap"></div>
                 <div class="gap"></div>
                 <div class="center gap fade-down section-heading">
-                    <h2 class="main-title">Meet The Team</h2>
+                    <h2 class="main-title">Team Kami</h2>
                     <hr>
-                    <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
                 </div>
                 <div class="gap"></div>
 
@@ -42,9 +41,9 @@
                         <div class="center team-member">
                             <img class="img-responsive img-thumbnail bounce-in" src="http://placehold.it/400x400" alt="">
                             <div class="team-content fade-up">
-                                <h5>John Smith<small class="role muted">Marketing Director</small></h5>
-                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <h5>Haryo<small class="role muted">Founder</small></h5>
+                                <p>-.</p>
+                                <a class="btn btn-social btn-facebook" target="_blank" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" target="_blank" href="#"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -54,17 +53,17 @@
                             <div class="team-content fade-up">
                                 <h5>Rifky Dermawan<small style="color: black;" class="role muted">Chief Executive Officer</small></h5>
                                 <p>Tindakan tepat berasal dari pengalaman, dan pengalaman berasal dari keputusan bodoh</p>
-                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <a class="btn btn-social btn-facebook" target="_blank" href="https://web.facebook.com/rifky.dermawan.58"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" target="_blank" href="https://www.instagram.com/rifkydwn/"><i class="fa fa-instagram"></i></a> 
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="center team-member">
-                            <img class="img-responsive img-thumbnail bounce-in" src="http://placehold.it/400x400" alt="">
+                            <img class="img-responsive img-thumbnail bounce-in" src="{{url('storage/images/foto_logo/adi.jpg')}}" style="width: 400px; height:400px;" alt="">
                             <div class="team-content fade-up">
-                                <h5>Steve Smith<small class="role muted">Sales Assistant</small></h5>
-                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <h5>Adi Yoga Prakasa<small class="role muted">Chief Technology Officer</small></h5>
+                                <p>Kerja Keras Tidak akan sia-sia.</p>
+                                <a class="btn btn-social btn-facebook" target="_blank" href="https://web.facebook.com/prakasa.yoga"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" target="_blank" href="https://www.instagram.com/a_yosa/"><i class="fa fa-instagram"></i></a> 
                             </div>
                         </div>
                     </div>
